@@ -25,7 +25,8 @@ scalacOptions ++= Seq(
   "-deprecation",
   "-unchecked",
   "-feature",
-  "-encoding", encoding.value
+  "-encoding", encoding.value,
+  "-Xexperimental"
 )
 
 libraryDependencies ++= Seq(
