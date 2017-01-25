@@ -2,7 +2,7 @@ name := "scalafx-training"
 
 version := "0.1"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.1"
 
 //***** Custom settings *****
 val javaVersion = settingKey[String]("javac source/target version")
@@ -25,12 +25,11 @@ scalacOptions ++= Seq(
   "-deprecation",
   "-unchecked",
   "-feature",
-  "-encoding", encoding.value,
-  "-Xexperimental"
+  "-encoding", encoding.value
 )
 
 libraryDependencies ++= Seq(
-  "org.scalafx" % "scalafx_2.11" % "8.0.102-R11"
+  "org.scalafx" % "scalafx_2.12" % "8.0.102-R11"
 )
 
 fork in Global := true
